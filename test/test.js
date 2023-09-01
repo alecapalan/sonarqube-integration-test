@@ -10,6 +10,8 @@ describe('server', function () {
         server.listen(8000);
     });
 
+    const unused = 'this is an unused var';
+    
     it('http://localhost:8000/api/ should return 200', function (done) {
         http.get('http://localhost:8000/api/', function (res) {
             assert.equal(200, res.statusCode);
