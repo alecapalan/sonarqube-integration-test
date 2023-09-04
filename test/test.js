@@ -11,6 +11,7 @@ describe('server', function () {
     });
 
     const unused = 'this is an unused var';
+    const anotherUnused = 'this is another unused var';
     
     it('http://localhost:8000/api/ should return 200', function (done) {
         http.get('http://localhost:8000/api/', function (res) {
